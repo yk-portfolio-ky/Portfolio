@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
+    <style>
+        html {
+        cursor: default; /* 1 */
+        line-height: 1.5; /* 2 */
+        -moz-tab-size: 4; /* 3 */
+        tab-size: 4; /* 3 */
+        -webkit-tap-highlight-color: transparent /* 4 */;
+        -ms-text-size-adjust: 100%; /* 5 */
+        -webkit-text-size-adjust: 100%; /* 5 */
+        word-break: break-word; /* 6 */
+        }
+
+        body {
+        margin: 0;
+        }
+
+        section {
+        width: 100%;
+        position: relative;
+        }
+
+        img {
+        width: 100%;
+        position: absolute;
+        }
+
+        .box {
+        width: 70%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 100;
+        }
+
+        .a {
+        top: 5%;
+        left: -15%;
+        }
+
+        .b {
+        top: 0;
+        left: 40%;
+        }
+
+        .Red {
+        background-color: rgb(255, 228, 234);
+        width: 100%;
+        height: 150vh;
+        }
+        .Blue {
+        background-color: rgb(228, 241, 255);
+        width: 100%;
+        height: 100vh;
+        }
+        .fade {
+        opacity: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<section>
+<div class="Red">
+    <img class="box a" src="img/3x/TopImg_LS@3x.png" alt="">
+    <img class="box b" src="img/3x/TopImg_RS@3x.png" alt="">
+    <img class="fade" src="img/3x/logo@3x.png" alt="">
+</div>
+</section>
+
+<section>
+<div class="Blue">
+    <img src="img/3x/K@3x.png"
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+    // For more information, see greensock.com/docs/v3/Plugins/ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
+
+    // You can use a ScrollTrigger in a tween or timeline
+    gsap.to(".a", {
+    x: -100,
+    scrollTrigger: {
+        trigger: ".a",
+        start: "center center",
+        end: "+=50%",
+        pin: true,
+        scrub: true,
+        id: "scrub"
+    }
+    });
+    gsap.to(".b", {
+    x: 100,
+    scrollTrigger: {
+        trigger: ".b",
+        start: "center center",
+        end: "+=50%",
+        pin: true,
+        scrub: true,
+        id: "scrub"
+    }
+    });
+    gsap.to(".fade", {
+    opacity: 1,
+    duration: 0.8,
+    });
+
+
+</script>
+
+</html>
