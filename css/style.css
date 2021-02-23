@@ -69,3 +69,15 @@ img {
 .fade {
     opacity: 0;
 }
+
+.ProfileBox {
+    padding: 10px 6px;
+    width: 100%;
+} 
+
+.ProfileImg {
+    margin: 0 auto;
+    width: 40%;
+    position: unset;
+    display: block;
+}
