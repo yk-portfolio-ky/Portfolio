@@ -1,0 +1,70 @@
+
+@charset "UTF-8";
+
+html {
+    cursor: default;
+    /* 1 */
+    line-height: 1.5;
+    /* 2 */
+    -moz-tab-size: 4;
+    /* 3 */
+    tab-size: 4;
+    /* 3 */
+    -webkit-tap-highlight-color: transparent/* 4 */
+    ;
+    -ms-text-size-adjust: 100%;
+    /* 5 */
+    -webkit-text-size-adjust: 100%;
+    /* 5 */
+    word-break: break-word;
+    /* 6 */
+}
+
+body {
+    margin: 0;
+}
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    position: absolute;
+}
+
+.box {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+}
+
+.a {
+    top: 5%;
+    left: -15%;
+}
+
+.b {
+    top: 0;
+    left: 40%;
+}
+
+.Red {
+    background-color: rgb(255, 228, 234);
+    width: 100%;
+    height: 150vh;
+}
+
+.Blue {
+    background-color: rgb(228, 241, 255);
+    width: 100%;
+    height: 100vh;
+}
+
+.fade {
+    opacity: 0;
+}
