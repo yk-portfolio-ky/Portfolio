@@ -1,7 +1,8 @@
 
 @charset "UTF-8";
 html {
-    font-family: 'Noto Serif JP', serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 10px;
 }
 body {
     margin: 0;
