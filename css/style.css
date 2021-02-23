@@ -53,9 +53,21 @@ img {
     box-sizing: border-box;
 } 
 
+.ProfileBox p {
+    text-align: center;
+}
+
 .ProfileImg {
     margin: 0 auto;
     width: 40%;
     position: unset;
     display: block;
+}
+
+.ProfileName {
+    font-size: 1.6rem;
+}
+
+.ProfilePosition {
+    font-size: 1.2rem;
 }
