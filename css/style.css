@@ -65,6 +65,18 @@ img {
     display: block;
 }
 
+.kImg {
+    border-radius: 47%;
+    background: #d6e4ff;
+    box-shadow: inset 20px 20px 60px #b6c2d9, inset -20px -20px 60px #f6ffff;
+}
+
+.mImg {
+    border-radius: 47%;
+    background: #ffd6ee;
+    box-shadow: inset 20px 20px 60px #d9b6ca, inset -20px -20px 60px #fff6ff;
+} 
+
 .ProfileName {
     font-size: 1.6rem;
 }
