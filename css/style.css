@@ -76,13 +76,13 @@ img {
 }
 
 .kImg {
-    border-radius: 47%;
+    border-radius: 48%;
     background: #d6e4ff;
     box-shadow: inset 20px 20px 60px #b6c2d9, inset -20px -20px 60px #f6ffff;
 }
 
 .mImg {
-    border-radius: 47%;
+    border-radius: 48%;
     background: #ffdb8f;
     box-shadow: inset 20px 20px 60px #d9ba7a, inset -20px -20px 60px #fffca4;
 } 
